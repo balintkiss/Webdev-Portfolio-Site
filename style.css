@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+
+.navbar {
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000; 
+}
+
+.nav-logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li { 
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.nav-links a:hover {
+    color: green;
+}
+
+.nav-links li:nth-child(4) a:hover {
+    color: #fff;
+}
+
+.nav-links li:nth-child(4) {
+    border: 2px solid black;
+    padding: 2px 0;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li:nth-child(4):hover {
+    background-color: green;
+    border-color: green;
+    
+}
+
+main {
+    margin-top: 75px;
+}
+
+.main-one {
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(/img/f3ae8d72-3708-11ef-aa1e-0242ac110002-photo-1618477388954-7852f32655ec.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9); /* Black with 50% opacity */
+    overflow: hidden;
+}
+
+.main-one .showcase {
+    margin-left: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main-one h1 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 52px;
+    display: inline-block;
+}
+
+.main-one h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.main-one button {
+    margin: 20px 0px;
+    padding: 0;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: green;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-one button:hover {
+    background-color: darkgreen;
+}
+
+.main-two {
+    height: 650px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-two .showcase {
+    margin-left: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    overflow: hidden;
+}
+
+.main-two h4 {
+    display: inline-block;
+    color: rgba(0, 180, 0, 0.819);
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.main-two h2 {
+    display: inline-block;
+    font-size: 32px;
+}
+
+.main-two p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.main-two a {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00000093;
+}
+
+.main-two a:hover {
+    text-decoration: none;
+}
+
+.showcase-image {
+    display: inline-block;
+    position: absolute;
+    margin-left: 900px;
+    height: 550px;
+    width: 400px;
+    background-image: url(/img/93eef494-294b-11e7-abcd-0242ac110003-pexels-photo-374074.jpeg);
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-four {
+    background-color: #eff1ef;
+    padding-top: 80px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: none;
+}
+
+.main-four h4 {
+    display: inline-block;
+    color: rgba(0, 180, 0, 0.819);
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.main-four h3 {
+    display: inline-block;
+    font-size: 32px;
+}
+
+.main-four p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.main-four .showcase {
+    margin-left: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.service {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    color: rgb(0, 171, 0);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.service .service-content {
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.service-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+}
+
+
+.service:hover .service-title span {
+    transform: translateX(0.2px); /* Move the span to the right on hover */
+}
+
+.service-title {
+    display: inline-block;
+    position: relative;
+}
+
+.service-title span {
+    margin-left: 15px;
+    position: absolute;
+    left: 100%; /* Position the span just outside the .service-title */
+    top: 0;
+    transform: translateX(-100%); /* Initially hide the span to the left of .service-title */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+.main-five {
+    margin-left: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.main-five p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: grey;
+}
+
+.side-one {
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main-five .side-one h4 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: green;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.main-five .side-one h2 {
+    color: #000;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.side-two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 600px;
+    background-color: #f5f5f5;
+    padding: 80px;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.required {
+    color: red;
+    padding-left: 2px;
+}
+
+.form-checkbox {
+   display: flex;
+   height: 20px;
+   flex-direction: row;
+   font-size: 14px;
+}
+
+.btn-submit {
+    width: 200px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0, 180, 0, 0.819);
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+.btn-submit:hover {
+    background-color: darkgreen;
+}
+
+.side-two h5 {
+    font-size: 22px;
+}
+
+.side-two a {
+    color: #000;
+    font-size: 18px;
+    text-decoration-thickness: 2px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: #162415;
+}
+
+
+.footer-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 400px;
+}
+
+
+.footer-nav ul li {
+    list-style-type: none;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    transition: border 0.1s;
+}
+
+
+.footer-nav ul li a:hover {
+    border-bottom:  #fff 2px solid;
+}
+
+.made p {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .showcase-image {
+        position: relative;
+        margin-left: 400px;
+        height: 200px;
+    }
+
+    .main-five {
+        margin-left: 20px;
+        margin-left: 400px;
+    }
+
+    .main-five .side-two {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .footer-nav ul {
+        margin: 0px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-two .showcase {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .main-two .showcase h2 {
+        font-size: 18px;
+    }
+
+    .main-two .showcase p {
+        font-size: 14px;
+    }
+
+    .main-two .showcase a {
+        font-size: 32px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .showcase-image {
+        position: relative;
+        margin-left: 0;
+        height: 200px;
+        width: 100%;
+    }
+
+
+    .main-five {
+        margin-left: 100px;
+    }
+
+    .main-five .side-two {
+        position: relative;
+        margin-top: 20px;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+
+    .footer-nav ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-nav ul li {
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .nav-logo {
+        font-size: 12px;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .main-one .showcase {
+        margin-left: 50px;
+    }
+
+    .main-four .showcase {
+        margin-left: 50px;
+    }
+
+    
+    .main-five {
+        margin-left: 20px;
+    }
+
+    .main-five .side-two {
+        position: relative;
+        margin-top: 20px;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .service {
+        width: 80%;
+    }
+}
