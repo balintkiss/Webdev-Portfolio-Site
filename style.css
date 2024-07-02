@@ -407,6 +407,12 @@ input, textarea {
     cursor: pointer;
 
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
 .btn-submit:hover {
     background-color: darkgreen;
 }
@@ -431,7 +437,7 @@ input, textarea {
 .footer-nav ul {
     display: flex;
     justify-content: flex-start;
-    margin-left: 400px;
+    margin-left: 0px auto;
 }
 
 
@@ -454,6 +460,11 @@ input, textarea {
 
 .made p {
     color: #fff;
+}
+
+.fa-brands {
+    margin: 40px 90px;
+    cursor: pointer;
 }
 
 
@@ -531,6 +542,10 @@ input, textarea {
 
     .footer-nav ul li {
         margin: 4px;
+    }
+
+    .fa-brands {
+        margin: 20px;
     }
 }
 

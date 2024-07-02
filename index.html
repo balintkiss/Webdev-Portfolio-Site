@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" src="/script.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2hKnej0hzeCxCRaD_rBFPpRj0GhzdQ1c&loading=async&callback=initMap"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="/style.css">
     <title>Portfolio Site</title>
 </head>
@@ -14,22 +13,22 @@
         <div class="navbar">
         <a href="#" class="nav-logo">Web Developer Portfolio</a>
         <ul class="nav-links">
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">About</a></li>
-            <li><a href="" class="nav-link">Services</a></li>
-            <li><a href="" class="nav-link-contact">Contact</a></li>
+            <li><a href="" class="nav-link" id="home-btn">Home</a></li>
+            <li><a href="" class="nav-link" id="about-btn">About</a></li>
+            <li><a href="" class="nav-link" id="services-btn">Services</a></li>
+            <li><a href="" class="nav-link-contact" id="contact-btn">Contact</a></li>
         </ul>
         </div>
     </header>
     <main>
-        <div class="main-one">
+        <div class="main-one" id="main-one">
             <div class="showcase">
                 <h1>Portfolio Showcase</h1>
                 <h4>Showcasing projects, skills, and services<h4>
-                <button>View Services</button>
+                <button id="service-btn">View Services</button>
             </div>
         </div>
-        <div class="main-two">
+        <div class="main-two" id="main-two">
             <div class="showcase">
                 <h4>About Us</h4>
                 <h2>Professional Web Developer in Budapest</h2>
@@ -40,7 +39,7 @@
             <div class="showcase-image"></div>
             </div>
         </div>
-        <div class="main-four">
+        <div class="main-four" id="main-four">
             <div class="showcase">
             <h4>Our Services</h4>
             <h3>Expert web development solutions</h3>
@@ -93,7 +92,7 @@
             </div>
         </div>
         </div>
-        <div class="main-five">
+        <div class="main-five" id="main-five">
             <div class="side-one">
                 <h4>Contact Us</h4>
                 <h2>Get in touch</h2>
@@ -155,31 +154,17 @@
     <footer>
         <div class="footer">
             <div class="footer-nav">
-            <ul>
-                <li><a href="">Services</a></li>
-                <li><a href="">Schedule Appointment</a></li>
-                <li><a href="">Complete Intake</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <div class="made">
-                <p>Made by Bálint Kiss</p>
-            </div>
+                <ul>
+                    <li><a href="" id="home-footer">Home</a></li>
+                    <li><a href="" id="services-footer">Services</a></li>
+                    <li><a href="" id="contact-footer">Schedule Appointment</a></li>
+                    <li><a href="" id="aboutus-footer">About Us</a></li>
+                </ul>
+                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #ffffff;"></i>
             </div>
         </div>
     </footer>
-    <script>
-        function initMap() {
-          const uluru = { lat: -25.344, lng: 131.036 }; // Example coordinates (Uluru)
-          const map = new google.maps.Map(document.getElementById('map'), {
-            center: uluru,
-            zoom: 8 // Adjust zoom level as needed
-          });
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-            title: 'Uluru (Ayers Rock)'
-          });
-        }
-      </script>
 </body>
 </html>
